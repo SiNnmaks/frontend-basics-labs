@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.task-section {
+    margin-bottom: 45px;
+}
+
+.task-section h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/* Кольори та шрифт блоків за макетом варіанта №5 */
+.block {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b2b2b;
+    text-align: center;
+}
+
+.top-text {
+    background-color: #6c9bd2;
+    height: 90px;
+}
+
+.main-text {
+    background-color: #b2df7e;
+    height: 280px;
+}
+
+.side-img {
+    background-color: #8da668;
+    height: 280px;
+}
+
+.bottom-img {
+    background-color: #34e5b5;
+    height: 90px;
+}
+
+/* === ЗАВДАННЯ 1: ЧИСТИЙ FLOAT (без flex, ширина у %) === */
+.container-float {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.container-float .top-text,
+.container-float .bottom-img {
+    width: 100%;
+    line-height: 90px;
+}
+
+.container-float .main-text {
+    float: left;
+    width: 75%;
+    line-height: 280px;
+}
+
+.container-float .side-img {
+    float: right;
+    width: 25%;
+    line-height: 280px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* === ЗАВДАННЯ 2: FLEX === */
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.container-flex .block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-flex {
+    display: flex;
+    width: 100%;
+}
+
+.container-flex .main-text {
+    width: 75%;
+}
+
+.container-flex .side-img {
+    width: 25%;
+}
