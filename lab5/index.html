@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сидорчук М. М., Група ІС-42, ЛР-5, Варіант 135 (15 / 5)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №5 — Події та регулярні вирази</h1>
+
+    <div class="main-wrapper">
+        <!-- Завдання 1: Варіант 15 (поля 1, 3, 6, 8, 10) -->
+        <section class="card">
+            <h2>Завдання 1. Форма для заповнення (Варіант 15)</h2>
+            <form id="user-form" novalidate>
+                <div class="form-group" id="row-pib">
+                    <label for="pib">ПІБ (формат: ТТТТТТ Т.Т.):</label>
+                    <input type="text" id="pib" name="pib" placeholder="Сидорчук М.М.">
+                </div>
+
+                <div class="form-group" id="row-group">
+                    <label for="group">Група (формат: ТТ-ЧЧ):</label>
+                    <input type="text" id="group" name="group" placeholder="ІС-42">
+                </div>
+
+                <div class="form-group" id="row-faculty">
+                    <label for="faculty">Факультет (формат: ТТТТ):</label>
+                    <input type="text" id="faculty" name="faculty" placeholder="ФІОТ">
+                </div>
+
+                <div class="form-group" id="row-address">
+                    <label for="address">Адреса (формат: м. ЧЧЧЧЧЧ):</label>
+                    <input type="text" id="address" name="address" placeholder="м. 074001">
+                </div>
+
+                <div class="form-group" id="row-telegram">
+                    <label for="telegram">Telegram (формат: @TTTTTTTT):</label>
+                    <input type="text" id="telegram" name="telegram" placeholder="@sinnmaks">
+                </div>
+
+                <button type="submit" class="submit-btn">Підтвердити</button>
+            </form>
+        </section>
+
+        <!-- Завдання 2: Варіант 5 (клітинка №5) -->
+        <section class="card">
+            <h2>Завдання 2. Таблиця 6×6 (Варіант 5)</h2>
+            <div class="palette-box">
+                <label for="color-picker">Оберіть колір із палітри (для Click та dblClick):</label>
+                <input type="color" id="color-picker" value="#058f8f">
+            </div>
+            <table id="grid-table"></table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

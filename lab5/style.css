@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222222;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 24px;
+    min-width: 340px;
+}
+
+/* Стилі форми */
+.form-group {
+    margin-bottom: 14px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+
+/* Виділення рядка з помилкою та валідного рядка */
+.form-group.error {
+    background-color: #ffeaea;
+    border-color: #d93025;
+}
+
+.form-group.error input {
+    border-color: #d93025;
+}
+
+.form-group.valid {
+    background-color: #eafaf1;
+    border-color: #1e8e3e;
+}
+
+.form-group.valid input {
+    border-color: #1e8e3e;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #058f8f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #047373;
+}
+
+/* Стилі таблиці 6х6 */
+.palette-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.palette-box input[type="color"] {
+    width: 50px;
+    height: 32px;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+#grid-table {
+    border-collapse: collapse;
+}
+
+#grid-table td {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #333333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s;
+}
