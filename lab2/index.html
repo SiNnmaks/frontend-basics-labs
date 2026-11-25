@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сидорчук М. О., Група ІС-42, ЛР-2, Варіант 135 (5)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 720px;
+            table-layout: fixed;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        td {
+            border: 2px solid #555555;
+            padding: 8px;
+            height: 26px;
+            transition: background-color 0.25s, color 0.25s;
+        }
+
+        /* 1-й рядок: фон #058f8f (nn = 05), контрастний білий текст */
+        tr.row-1 {
+            background-color: #058f8f;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* 2-й рядок: фон #f5f505 (nn = 05), контрастний темно-синій текст */
+        tr.row-2 {
+            background-color: #f5f505;
+            color: #050533;
+            font-weight: bold;
+        }
+
+        /* Зміна кольорів на протилежні при наведенні курсора */
+        tr.row-1:hover {
+            background-color: #f5f505;
+            color: #050533;
+        }
+
+        tr.row-2:hover {
+            background-color: #058f8f;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Завдання 1. Таблиця (Варіант 5)</h2>
+    <table>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 12.5%;">
+            <col style="width: 12.5%;">
+            <col style="width: 50%;">
+        </colgroup>
+        <!-- 1-й рядок: ПІБ окремо в кожну комірку -->
+        <tr class="row-1">
+            <td>Сидорчук</td>
+            <td colspan="2">Максим</td>
+            <td>Миколайович</td>
+        </tr>
+        <!-- 2-й рядок: група, номер ЛР, номер варіанта -->
+        <tr class="row-2">
+            <td rowspan="2">ІС-42</td>
+            <td rowspan="2">ЛР-2</td>
+            <td>Варіант 135 (5)</td>
+            <td rowspan="2"></td>
+        </tr>
+        <!-- 3-й рядок: нижня половина розділеної центральної комірки -->
+        <tr>
+            <td></td>
+        </tr>
+        <!-- 4-й рядок: нижній рядок таблиці -->
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2>Завдання 2. Зображення засобами CSS (Варіант 5)</h2>
+    <div class="figures-wrapper">
+        <div class="figure-block">
+            <h3>1. За допомогою position</h3>
+            <div class="canvas-position">
+                <div class="box box-top"></div>
+                <div class="box box-bottom"></div>
+            </div>
+        </div>
+
+        <div class="figure-block">
+            <h3>2. За допомогою transform</h3>
+            <div class="canvas-transform">
+                <div class="box box-top"></div>
+                <div class="box box-bottom"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
