@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Сидорчук Максим, КПІ, ФІОТ, JavaScript, DOM, лабораторна робота 4">
+    <meta name="description" content="Лабораторна робота №4 з основ FE-технологій: доступ до об'єктів DOM та керування елементами">
+    <title>Сидорчук М. М., Група ІС-42, ЛР-4, Варіант 135</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Сидорчук Максим Миколайович</h2>
+
+    <p><strong>Дата та місце народження:</strong> 24 лютого 2007 року, м. Бровари, Україна.</p>
+
+    <p><strong>Освіта:</strong> Броварський ліцей № 2 ім. В.О. Сухомлинського; Навчально-науковий інститут / Факультет інформатики та обчислювальної техніки (ФІОТ) НТУУ «КПІ ім. Ігоря Сікорського», спеціальність 126 «Інформаційні системи та технології».</p>
+
+    <h3>Мої хобі:</h3>
+    <ul>
+        <li>Гра на акустичній гітарі</li>
+        <li>Настільні ігри</li>
+        <li>Малювання</li>
+        <li>Комп'ютерні ігри</li>
+    </ul>
+
+    <!-- 6-й елемент сторінки: доступ через getElementById() -->
+    <h3 id="el-6" class="clickable">Улюблені фільми та книги:</h3>
+
+    <!-- 7-й елемент сторінки: доступ через querySelector() -->
+    <ol class="el-7 clickable">
+        <li>«Бійцівський клуб»</li>
+        <li>«Метро 2033»</li>
+        <li>Фанат кіновсесвіту Марвел</li>
+    </ol>
+
+    <h3>Улюблене місто</h3>
+    <p>
+        Київ — столиця та найбільше місто України, розташоване на берегах річки Дніпро. 
+        Місто поєднує багатовікову історичну архітектуру Подолу та Верхнього міста із сучасним 
+        динамічним ритмом, затишними парками на схилах Дніпра та активним студентським і культурним життям.
+    </p>
+
+    <div id="image-container">
+        <a href="https://kyivcity.gov.ua/" target="_blank" rel="noopener noreferrer" title="Офіційний портал Києва">
+            <img id="city-image" src="images/kyiv.jpg" alt="Панорама міста Київ" style="width: 600px;">
+        </a>
+    </div>
+
+    <div class="controls">
+        <button type="button" id="btn-add">Додати</button>
+        <button type="button" id="btn-zoom-in">Збільшити</button>
+        <button type="button" id="btn-zoom-out">Зменшити</button>
+        <button type="button" id="btn-delete">Видалити</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

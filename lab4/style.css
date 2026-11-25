@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.clickable {
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+/* Зміна кольору фону та тексту для 6-го елемента (getElementById) */
+.active-id {
+    background-color: #058f8f;
+    color: #ffffff;
+}
+
+/* Зміна кольору фону та тексту для 7-го елемента (querySelector) */
+.active-selector {
+    background-color: #f5f505;
+    color: #050533;
+}
+
+#image-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#image-container img {
+    display: block;
+    height: auto;
+    border-radius: 6px;
+    transition: width 0.2s ease;
+}
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.controls button:hover {
+    background-color: #dcdcdc;
+}
